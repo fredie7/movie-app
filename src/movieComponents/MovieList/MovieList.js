@@ -4,14 +4,12 @@ import MovieSelected from './MovieSelected/MovieSelected';
 import MovieNominated from './MovieNominated/MovieNominated';
 import SearchBar from '../SearchBar/SearchBar';
 import MovieHeader from '../MovieHeader/MovieHeader'
-import ShowWarning from '../ShowWarning/ShowWarning';
 
 
 const MovieList = () => {
     const [movies, setMovies] = useState([]);
     const [searchMovie, setSearchMovie] = useState('');
     const [nominatedMovie, setNominatedMovie] = useState([]);
-    // const [disable, setDisable] = useState(false)
 
     const getMovies = async(searchMovie)=> {
         const url = `https://www.omdbapi.com/?s=${searchMovie}&apikey=44274adc`;
