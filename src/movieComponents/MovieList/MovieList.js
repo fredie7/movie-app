@@ -62,7 +62,7 @@ const MovieList = () => {
     return (
         <>
             <SearchBar searchMovie={searchMovie} setSearchMovie={setSearchMovie}/>
-            {showWarning()}
+            {/* {showWarning()} */}
             <MovieHeader />
             <div className={classes.Container}>
                 <div className={classes.Selected}>
