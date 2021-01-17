@@ -57,7 +57,9 @@ const MovieList = () => {
 
     useEffect(()=> {
         const movieList = JSON.parse(localStorage.getItem('movies'))
-        setNominatedMovie(movieList)
+        if (movieList) {
+            setNominatedMovie(movieList)
+        }
     }, []);
 
     return (
