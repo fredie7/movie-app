@@ -2,8 +2,9 @@ import React from 'react';
 import classes from './MovieSelected.module.css';
 
 export const MovieSelected = (props) => {
-    const nominatedMovie = props.nominatedMovie
-    console.log('nominatedMovie',nominatedMovie)
+    const nominatedMovie = props.nominatedMovie || [];
+    console.log('nominatedMovie',nominatedMovie);
+
     return (
         <>      
             {
