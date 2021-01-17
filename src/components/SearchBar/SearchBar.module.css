@@ -1,0 +1,15 @@
+.Search {
+    width: 100%;
+    overflow: hidden;
+    padding: 8px;
+    font-size: 20px;
+    font-family: serif;
+    border-radius: 5px;
+    border-color: #f4f4f4;
+    margin-top: 20px;
+}
+.Search:focus {
+    /* outline-width: 1px;
+    outline-style: solid; */
+    outline-color: rgb(160, 27, 27);
+  }

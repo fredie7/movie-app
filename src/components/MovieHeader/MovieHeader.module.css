@@ -1,0 +1,11 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.Selected, .Nominated {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}

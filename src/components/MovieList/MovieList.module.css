@@ -1,0 +1,28 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    /* background-color: rgb(33, 82, 33); */
+    /* overflow: scroll; */
+}
+
+.Selected {
+    flex-basis: 60%;
+}
+.Nominated {
+    flex-basis: 25%;
+}
+.Warning {
+    color: gold;
+    font-family: cursive;    
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    

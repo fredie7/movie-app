@@ -1,0 +1,30 @@
+.Title {
+
+}
+.Btn {
+    margin-left: 15px;
+    padding: 2px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: 2px solid white;
+    font-size: 15px;
+}
+.Btn:hover {
+    background-color: rgb(223, 235, 234);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.Selected {
+    /* display: flex;
+    margin-top: 10px;
+    flex-basis: 50%; */
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SelectedWrapper {
+    display: flex;
+    /* flex-basis: 50%; */
+    background-color: greenyellow;
+}
