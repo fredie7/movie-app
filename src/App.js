@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from './Components/Layout/Layout';
-import Title from './Components/Title/Title';
+import Layout from './movieComponents/Layout/Layout';
+import Title from './movieComponents/Title/Title';
 // import SearchBar from './Components/SearchBar/SearchBar';
-import MovieList from './Components/MovieList/MovieList';
+import MovieList from './movieComponents/MovieList/MovieList';
 
 const App = () => {
   return (

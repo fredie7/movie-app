@@ -13,7 +13,7 @@ const MovieList = () => {
     // const [disable, setDisable] = useState(false)
 
     const getMovies = async(searchMovie)=> {
-        const url = `http://www.omdbapi.com/?s=${searchMovie}&apikey=44274adc`;
+        const url = `https://www.omdbapi.com/?s=${searchMovie}&apikey=44274adc`;
         const response = await fetch(url)
         const responseData = await response.json()
         if (responseData.Search) {
