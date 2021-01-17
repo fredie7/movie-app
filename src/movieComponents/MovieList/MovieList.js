@@ -24,17 +24,17 @@ const MovieList = () => {
         localStorage.setItem('movies', JSON.stringify(movie))
     }
 
-    // const showWarning = ()=> {
-    //     let response ;
-    //     if (nominatedMovie.length === 5) {
-    //          response = (
-    //             <div className={classes.Warning}>
-    //                 <h2>you are only allowed to nominate 5 movies</h2>
-    //             </div>
-    //         )
-    //     }
-    //     return response
-    // }
+    const showWarning = ()=> {
+        let response ;
+        if (nominatedMovie.length === 5) {
+             response = (
+                <div className={classes.Warning}>
+                    <h2>you are only allowed to nominate 5 movies</h2>
+                </div>
+            )
+        }
+        return response
+    }
 
     const addMovie = (movie)=> {
         const nominationList = [...nominatedMovie, movie]
@@ -65,7 +65,7 @@ const MovieList = () => {
     return (
         <>
             <SearchBar searchMovie={searchMovie} setSearchMovie={setSearchMovie}/>
-            {/* {showWarning()} */}
+            {showWarning()}
             <MovieHeader />
             <div className={classes.Container}>
                 <div className={classes.Selected}>
