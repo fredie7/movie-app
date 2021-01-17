@@ -33,16 +33,16 @@ const MovieList = () => {
         }
     }
 
-    const showWarning = ()=> {
-        if (nominatedMovie.length === 5) {
-            const response = (
-                <div className={classes.Warning}>
-                    <h2>you cannot nominate any more movies</h2>
-                </div>
-            )
-            return response
-        }
-    }    
+    // const showWarning = ()=> {
+    //     if (nominatedMovie.length === 5) {
+    //         const response = (
+    //             <div className={classes.Warning}>
+    //                 <h2>you cannot nominate any more movies</h2>
+    //             </div>
+    //         )
+    //         return response
+    //     }
+    // }    
     
     const deleteMovie = movie => {
         const deletedMovie = nominatedMovie.filter(film => film.imdbID !== movie.imdbID)
