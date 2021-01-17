@@ -4,6 +4,7 @@ import MovieSelected from './MovieSelected/MovieSelected';
 import MovieNominated from './MovieNominated/MovieNominated';
 import SearchBar from '../SearchBar/SearchBar';
 import MovieHeader from '../MovieHeader/MovieHeader'
+import ShowWarning from '../ShowWarning/ShowWarning';
 
 
 const MovieList = () => {
@@ -26,14 +27,15 @@ const MovieList = () => {
     }
 
     const showWarning = ()=> {
+        let response ;
         if (nominatedMovie.length === 5) {
-            const response = (
+             response = (
                 <div className={classes.Warning}>
                     <h2>you are only allowed to nominate 5 movies</h2>
                 </div>
             )
-            return response
         }
+        return response
     }
 
     const addMovie = (movie)=> {
