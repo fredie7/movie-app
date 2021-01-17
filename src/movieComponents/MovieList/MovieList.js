@@ -44,7 +44,6 @@ const MovieList = () => {
         }
     }
 
-        
     
     const deleteMovie = movie => {
         const deletedMovie = nominatedMovie.filter(film => film.imdbID !== movie.imdbID)
