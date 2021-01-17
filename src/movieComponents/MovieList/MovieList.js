@@ -25,6 +25,17 @@ const MovieList = () => {
         localStorage.setItem('movies', JSON.stringify(movie))
     }
 
+    const showWarning = ()=> {
+        if (nominatedMovie.length === 5) {
+            const response = (
+                <div className={classes.Warning}>
+                    <h2>you are only allowed to nominate 5 movies</h2>
+                </div>
+            )
+            return response
+        }
+    }
+
     const addMovie = (movie)=> {
         const nominationList = [...nominatedMovie, movie]
         if (nominationList.length <= 5) {
@@ -33,16 +44,7 @@ const MovieList = () => {
         }
     }
 
-    // const showWarning = ()=> {
-    //     if (nominatedMovie.length === 5) {
-    //         const response = (
-    //             <div className={classes.Warning}>
-    //                 <h2>you cannot nominate any more movies</h2>
-    //             </div>
-    //         )
-    //         return response
-    //     }
-    // }    
+        
     
     const deleteMovie = movie => {
         const deletedMovie = nominatedMovie.filter(film => film.imdbID !== movie.imdbID)
@@ -62,7 +64,7 @@ const MovieList = () => {
     return (
         <>
             <SearchBar searchMovie={searchMovie} setSearchMovie={setSearchMovie}/>
-            {/* {showWarning()} */}
+            {showWarning()}
             <MovieHeader />
             <div className={classes.Container}>
                 <div className={classes.Selected}>
